@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+</head>
+<body>
+    <h1>Message Board</h1>
+    <ul>
+        <% messages.forEach((message, index) => { %>
+            <li>
+                <strong><%= message.user %>:</strong> <%= message.text %> 
+                <a href="/message/<%= index %>">Open</a>
+            </li>
+        <% }) %>
+    </ul>
+    <br>
+    <a href="/new">Add a New Message</a>
+</body>
+</html> -->
+
+<html>
+  <head>
+    <title>mini messageboard</title>
+    <link rel="stylesheet" href="/styles.css"> 
+  </head>
+ <div class="container">
+    <body>
+        <h1 class="header-">Mini Message board</h1>
+        <ul class="msg-data">
+            <% messages.forEach((message, index) => { %>
+                <li class="msg-data-li">
+                    <div >
+                        <h2 class="msg-Sender">Sender:</h2>
+                       <p class="msg-Sender-p">  <%= message.user %></p>
+                    </div>
+
+
+                    <div >
+                        <h2 class="msg-date">Date:</h2> 
+                        <p class="msg-date-p"> 
+                            <%= message.added.toString() %>
+                        </p>
+                    </div>
+
+                    <div > <h2 class="msg-text"> Message: </h2>
+                        <p class="msg-text-p"><%= message.text %></p>
+                        <p class="msg-reply">Reply: <%= message.reply %></p>
+                    </div>
+
+                    <a href="/message/<%= index %>"><button>Open</button></a>
+                </li>
+                <% }) %>
+                <a href="/new" ><button class="btn-home">Add new message</button></a>
+        </ul>
+ </div>
+  </body>
+</html>

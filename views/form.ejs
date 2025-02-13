@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form-styles.css">
+    <title>Mini Message Board</title>
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Message</title>
+    </head>
+    <body>
+        <h1 >Add a New Message</h1>
+        <form method="POST" action="/new">
+            <label for="messageUser"  >Your Name:</label>
+            <input type="text" id="messageUser" name="messageUser" placeholder="Enter your name eg.. Doe" required>
+            <br>
+            <label for="messageText">Message:</label>
+            <!-- <input type="text" id="messageText" name="messageText" required> -->
+        <textarea name="text" id="text" required rows="3" cols="10" placeholder="Write your message here... " maxlength="200"  ></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <a href="/">Back to Home</a>
+    </body>
+    </html>
+    
+      
+    
+</body>
+</html>

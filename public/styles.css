@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* button {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 4px;
+  } */
+
+  .header-{
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    width: max-content;
+
+  }
+  .msg-data{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: px;
+  }
+
+  ul,li{
+    list-style: none;
+  }
+
+  .btn-home, button {
+    background-color: dodgerblue;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 14px;
+    
+  }
+  
+
+
+  .msg-data-li {
+    display: grid;
+    grid-template-columns: auto repeat(3, 3fr); /* Fixed syntax */
+    gap: 2rem;
+    padding: 14px 20px; /* Removed duplicate padding */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.2s ease; /* Added subtle hover effect */
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    text-align: left;
+    font-size: 16px;
+}
+
+.msg-data-li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
+
+
+/* Responsive design */
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .msg-data-li {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
