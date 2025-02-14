@@ -1,10 +1,16 @@
 {
-    "version": "0.1.0",
-    "build": [
-        {"src": "*.js", "use":  "@vercel/node", "dist": "dist", "command": "node dist/app.js"},
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      }
     ],
-    "route":[
-        {"src": "/(.*)", "dest": "dist/app.js"  }
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
+      }
     ]
-}
-
+  }
+  
