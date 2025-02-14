@@ -13,6 +13,7 @@ h1{
     color: #333;
     margin-bottom: 20px;
     text-decoration-thickness: 2px;
+padding-top: 2rem;
 
 
 }
@@ -22,6 +23,7 @@ form{
     width: 420px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 5rem;
     border-radius: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -105,4 +107,28 @@ input[type="submit"], input[type="reset"]{
         max-width: 400px;  /* Max columns */
         height: 100px;
         max-height: 200px; /* Max rows */
+    }
+
+
+    .back-btn{
+        margin-top: 30px;
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        display: inline-block;
+        padding: 14px 20px;
+        text-align: center;
+        border-radius: 14px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        border: none;
+        width: 150px;
+        height: 30px;
+        margin-left: 10px;
+        font-weight: bold;
+        position: relative;
+        transform:  translateY( 40px);
+        left: 1rem;
     }

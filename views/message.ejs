@@ -1,10 +1,118 @@
+<head>
+  <link rel="stylesheet" href="/public/messageForm.css">
+</head>
+<!-- <style>
+form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding:  50px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  width: 300px;
+  }
+  h2 {
+    color: blue;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      }
+      button {
+        background-color: green;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        cursor: pointer;
+        } -->
+
+        <style>
+        
+        form{
+    width: 420px;
+    margin: 0 auto;
+    padding: 20px;
+    transform: translateY(30px);
+    padding-top: -5rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    height: 50vh;
+}
+
+
+form{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding:  50px;
+}
+
+
+h2 {
+    color:  dodgerblue;
+    text-align: center;
+
+    }
+    input { color: dodgerblue;
+      /* display: block; */
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      }
+      button {
+    background-color: dodgerblue;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 14px ;
+    padding: 15px 70px;
+  }
+  
+        label {
+
+          display: block;
+          color: #033;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+         padding-top: 20;
+         gap: 3rem;
+
+          
+        }
+        @media screen and (max-width: 600px) {
+          form {
+            width: 70%;
+            padding-top: 0;
+          }
+        }
+
+
+        
+</style>
+
+
 <form method="post" action="/new">
     <h2>Message Form</h2>
     <label>Author: 
-      <input name="messageUser" type="text" />
+      <input name="messageUser" type="text" placeholder="Your Name eg.. John doe" />
     </label>
     <label>Message:
-      <input name="messageText" type="text">
+      <input name="messageText" type="text " placeholder="Your message here  ">
     </label>
     <button>Submit message</button>
   </form>

@@ -24,21 +24,42 @@ body {
     flex-wrap: wrap;
   }
 
-  /* button {
+ 
+ .btn-home:hover, button:hover {
+    background-color: #60a7ee;
+  }
+ .header {
+    text-align: center;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
 
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px; 
-    border-radius: 4px;
-  } */
+ .header-title {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    max-width: 20em;
+  }
 
+ .header-subtitle {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    max-width: 20em;
+  }
   .header-{
     color: #fff;
     background-color: #333;
     padding: 10px;
     text-align: center;
     font-size: 24px;
-    width: max-content;
+    max-width: 20em;
 
   }
   .msg-data{
